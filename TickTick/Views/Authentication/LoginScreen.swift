@@ -63,44 +63,12 @@ struct LoginScreen: View {
     }
 
     func buildFooter() -> some View {
-        return HStack(spacing: 0) {
-            Rectangle()
-                .foregroundStyle(Color.primaryGray)
-                .frame(maxHeight: 1)
-
-            Text("or with")
-                .foregroundStyle(Color.primaryGray)
-                .font(.custom("Hind Siliguri", size: 12).weight(.regular))
-                .padding([.trailing, .leading], 21)
-            Rectangle()
-                .foregroundColor(Color.primaryGray)
-                .frame(maxHeight: 1)
-
-
-        }
+        return CustomFooter()
             .padding([.leading, .trailing], 35)
     }
     private func buildLoginOptions() -> some View {
-        return HStack(spacing: 0) {
-            ZStack(alignment: .center) {
-                Circle()
-                    .stroke(.red, lineWidth: 0.78)
-                    .background(.clear)
-                    .frame(width: 42, height: 42)
-                Image(.icGoogle).frame(width: 24, height: 24)
-            }
-            Spacer()
-                .frame(width: 16)
-            ZStack(alignment: .center) {
-                Circle()
-                    .stroke(Color.primaryGray, lineWidth: 0.78)
-                    .background(.clear)
-                    .frame(width: 42, height: 42)
-                Image(.icFb)
-                    .frame(width: 30, height: 30)
-            }
-
-        }
+        print("clm")
+        return CustomLoginOptions(onTapFirstOption: {print("hello")}, onTapSecondOption:    {print("hello")})
     }
 
     private func buildSignUpText() -> some View {

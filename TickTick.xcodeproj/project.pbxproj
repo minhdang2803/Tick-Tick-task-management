@@ -16,6 +16,8 @@
 		A03CE4242B21DC7800D02740 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = A03CE41E2B21DC7800D02740 /* OFL.txt */; };
 		A03CE4252B21DC7800D02740 /* HindSiliguri-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A03CE41F2B21DC7800D02740 /* HindSiliguri-Bold.ttf */; };
 		A03CE42A2B21E57900D02740 /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03CE4292B21E57900D02740 /* RegisterScreen.swift */; };
+		A03CE42C2B22C47600D02740 /* CustomFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03CE42B2B22C47600D02740 /* CustomFooter.swift */; };
+		A03CE42E2B22C4CC00D02740 /* CustomLoginOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03CE42D2B22C4CC00D02740 /* CustomLoginOptions.swift */; };
 		A04062C42B09021E004C0799 /* TickTickApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04062C32B09021E004C0799 /* TickTickApp.swift */; };
 		A04062C62B09021E004C0799 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04062C52B09021E004C0799 /* ContentView.swift */; };
 		A04062C82B09021F004C0799 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A04062C72B09021F004C0799 /* Assets.xcassets */; };
@@ -58,6 +60,8 @@
 		A03CE41F2B21DC7800D02740 /* HindSiliguri-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HindSiliguri-Bold.ttf"; sourceTree = "<group>"; };
 		A03CE4262B21DD3C00D02740 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A03CE4292B21E57900D02740 /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
+		A03CE42B2B22C47600D02740 /* CustomFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFooter.swift; sourceTree = "<group>"; };
+		A03CE42D2B22C4CC00D02740 /* CustomLoginOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLoginOptions.swift; sourceTree = "<group>"; };
 		A04062C02B09021E004C0799 /* TickTick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TickTick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A04062C32B09021E004C0799 /* TickTickApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickTickApp.swift; sourceTree = "<group>"; };
 		A04062C52B09021E004C0799 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -222,6 +226,8 @@
 			children = (
 				A04062FE2B090CE2004C0799 /* CustomButton.swift */,
 				A0355CA62B1DAEFE00B8E22B /* CustomTextField.swift */,
+				A03CE42B2B22C47600D02740 /* CustomFooter.swift */,
+				A03CE42D2B22C4CC00D02740 /* CustomLoginOptions.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -389,6 +395,8 @@
 				A04063022B091EB8004C0799 /* LoginScreen.swift in Sources */,
 				A04062C42B09021E004C0799 /* TickTickApp.swift in Sources */,
 				A04062FB2B090B89004C0799 /* ColorExtension.swift in Sources */,
+				A03CE42C2B22C47600D02740 /* CustomFooter.swift in Sources */,
+				A03CE42E2B22C4CC00D02740 /* CustomLoginOptions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
