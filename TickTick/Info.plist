@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict/>
+	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>HindSiliguri-Regular.ttf</string>
+		<string>HindSiliguri-Medium.ttf</string>
+		<string>HindSiliguri-SemiBold.ttf</string>
+		<string>HindSiliguri-Light.ttf</string>
+		<string>HindSiliguri-Bold.ttf</string>
+	</array>
+</dict>
+</plist>
