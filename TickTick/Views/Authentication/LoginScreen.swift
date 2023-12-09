@@ -8,7 +8,7 @@
 import SwiftUI
 struct LoginScreen: View {
     var body: some View {
-        VStack(spacing: 0) {
+        NavigationView{VStack(spacing: 0) {
             Spacer().frame(height: 100)
             buildLoginTitle()
             Spacer()
@@ -34,10 +34,10 @@ struct LoginScreen: View {
             Spacer()
                 .frame(height: 124)
             buildSignUpText()
+            Spacer().frame(height: 44)
 
 
-
-        }
+        }}.navigationBarBackButtonHidden(true)
 
     }
 
@@ -67,7 +67,6 @@ struct LoginScreen: View {
             .padding([.leading, .trailing], 35)
     }
     private func buildLoginOptions() -> some View {
-        print("clm")
         return CustomLoginOptions(onTapFirstOption: {print("hello")}, onTapSecondOption:    {print("hello")})
     }
 
@@ -78,10 +77,12 @@ struct LoginScreen: View {
                     .weight(.regular))
                     .frame(height: 17)
                     .foregroundColor(Color(hex: 0x2C406E))
-            Text("Sign Up")
-                .font(.custom("Hind Siliguri", size: 14).weight(.semibold))
-                    .frame(height: 17)
-                    .foregroundColor(Color(hex: 0x2C406E))
+            NavigationLink(destination: RegisterScreen()){
+                Text("Sign Up")
+                    .font(.custom("Hind Siliguri", size: 14).weight(.semibold))
+                        .frame(height: 17)
+                        .foregroundColor(Color(hex: 0x2C406E))
+            }
                     
         }
     

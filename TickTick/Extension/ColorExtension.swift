@@ -17,4 +17,8 @@ extension Color {
             opacity: alpha
         )
     }
+    
+    public static let primaryPurple : Color = Color(hex: 0x5B67CA)
+    public static let primaryGray :Color = Color(hex:0xC6CEDD)
+    public static let primaryBlue : Color = Color(hex: 0x2C406E)
 }

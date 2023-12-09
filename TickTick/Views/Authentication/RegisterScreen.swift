@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct RegisterScreen: View {
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     var body: some View {
         VStack{
             Spacer().frame(height: 100)
@@ -23,9 +24,28 @@ struct RegisterScreen: View {
                 .padding([.trailing,.leading],36)
             Spacer().frame(height: 73)
             CustomButton(title: "Create", backgroundColor: Color.primaryPurple)
+            Spacer().frame(height: 55)
+            CustomFooter().padding([.leading,.trailing],35)
+            Spacer().frame(height: 30)
+            CustomLoginOptions(onTapFirstOption: {}, onTapSecondOption: {})
+            Spacer().frame(height: 95)
+            buildSignInQuote()
+            Spacer().frame(height: 44)
         }
+        .navigationBarBackButtonHidden(true)
     }
-    
+    private func buildSignInQuote() -> some View {
+        return HStack(spacing: 0){
+            Text("Have any account?")
+            Text(" Sign In")
+                .fontWeight(.semibold)
+                .onTapGesture {
+                    self.presentationMode.wrappedValue.dismiss()
+                }
+        }
+        .foregroundStyle(Color.primaryBlue)
+        .font(.custom("Hind Siliguri", size: 14).weight(.regular))
+    }
     private func buildSignUpTitle() -> some View{
         return Text("Sign Up")
             .foregroundStyle(Color.primaryPurple)

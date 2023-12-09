@@ -2,7 +2,7 @@
 //  TickTickApp.swift
 //  TickTick
 //
-//  Created by Le Minh Dang on 18/11/2023.
+//  Created by Le Minh Dang on 18/11/2023.ßß
 //
 
 import SwiftUI
@@ -15,3 +15,8 @@ struct TickTickApp: App {
         }
     }
 }
+
+
+#Preview(body: {
+    return ContentView()
+})
